@@ -22,8 +22,18 @@ function setup() {
   myEngine = Engine.create();
   myWorld= myEngine.world;
 
- 
+  ground = new Ground(600,380,1200,20);
+  boggie1=new Boggie(50,170,50,50);
+  boggie2=new Boggie(150,170,50,50);
+  boggie3=new Boggie(250,170,50,50);
+  boggie4=new Boggie(350,170,50,50);
+  boggie5=new Boggie(450,170,50,50);
+  boggie6=new Boggie(550,170,50,50);
 
+
+
+rock1= new Rock(1100,200,100,100);
+  
 
 }
 
@@ -40,11 +50,7 @@ function draw() {
 
   rock1.show();
   
-  chain1.show();
-  chain2.show();
-  chain3.show();
-  chain4.show();
-  chain5.show();
+
   
   }
 
